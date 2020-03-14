@@ -1,10 +1,10 @@
-package com.ava.indianbowl.avaindianbowlparentpom;
+package com.ava.indianbowl;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AvaIndianbowlParentPomApplicationTests {
+class AvaIndianbowlTests {
 
 	@Test
 	void contextLoads() {

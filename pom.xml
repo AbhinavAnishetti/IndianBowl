@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ava.indianbowl</groupId>
-	<artifactId>ava-indianbowl-parent-pom</artifactId>
+	<artifactId>ava-indianbowl</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ava-indianbowl-parent-pom</name>
+	<name>ava-indianbowl</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

@@ -1,20 +1,27 @@
 package com.ava.indianbowl.resourcecontroller;
 
 
+import com.ava.indianbowl.resource.Product;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.HashSet;
+import java.util.Set;
 
 @RestController
 @RequestMapping("products")
 public class ProductController {
 
-    @GetMapping
-    public String getProducts(){
-        return "get Products was called";
+    HashSet<Product> productSet = new HashSet<Product>();
+
+    @GetMapping("/Get")
+    public Set<Product> getProducts(){
+        return productSet;
     }
 
     @PostMapping
-    public String createProduct(){
-       return "create product was called";
+    public long createProduct(@RequestBody Product product){
+       productSet.add(product);
+       return product.getProductId();
     }
 
     @PutMapping

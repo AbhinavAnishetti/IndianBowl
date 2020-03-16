@@ -1,7 +1,6 @@
 package com.ava.indianbowl.resource;
 
 public class Item {
-    private long itemId;
     private long productId;
     private long fillingId;
     private int  fillingCount;
@@ -14,13 +13,8 @@ public class Item {
         this.fillingCount = builder.fillingCount;
         this.fillingId = builder.fillingId;
         this.itemCount = builder.itemCount;
-        this.itemId = builder.itemId;
         this.productId = builder.productId;
         this.totalPrice = builder.totalPrice;
-    }
-
-    public long getItemId() {
-        return itemId;
     }
 
     public long getProductId() {
@@ -50,7 +44,6 @@ public class Item {
     @Override
     public String toString() {
         return "Item{" +
-                "itemId=" + itemId +
                 ", productId=" + productId +
                 ", fillingId=" + fillingId +
                 ", fillingCount=" + fillingCount +
@@ -61,7 +54,6 @@ public class Item {
     }
 
     public static class Builder{
-       private long itemId;
        private long productId;
        private long fillingId;
        private int  fillingCount;
@@ -69,8 +61,7 @@ public class Item {
        private long cartId;
        private double totalPrice;
 
-       public Builder(long itemId, long fillingId, long productId, double totalPrice){
-           itemId = itemId;
+       public Builder(long fillingId, long productId, double totalPrice){
            productId = productId;
            fillingId = fillingId;
            totalPrice = totalPrice;

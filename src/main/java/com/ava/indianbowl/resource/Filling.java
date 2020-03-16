@@ -12,7 +12,7 @@ public class Filling {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private long fillingId;
 
     public Filling(String name, double price){
         this.name = name;
@@ -26,5 +26,11 @@ public class Filling {
         return price;
     }
 
+    public long getFillingId() {
+        return fillingId;
+    }
 
+    public void setFillingId(long fillingId) {
+        this.fillingId = fillingId;
+    }
 }

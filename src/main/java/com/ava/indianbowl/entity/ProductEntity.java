@@ -16,7 +16,7 @@ public class ProductEntity implements Serializable {
     @GeneratedValue
     private long productId;
 
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false, length = 50, unique=true)
     private String productName;
 
     @Column(nullable = false)

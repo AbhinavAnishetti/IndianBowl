@@ -24,7 +24,7 @@ public class ProductServiceImpl implements ProductService {
         ProductEntity storedProductEntity = productRepository.save(productEntity);
 
         ProductDto returnValue = new ProductDto();
-        BeanUtils.copyProperties(storedProductEntity, productEntity);
+        BeanUtils.copyProperties(storedProductEntity, returnValue);
 
         return returnValue;
     }
